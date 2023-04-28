@@ -8,31 +8,43 @@ namespace R5T.T0181
     [FunctionalityMarker]
     public partial interface IStringOperator : IFunctionalityMarker
     {
-        public ExecutableDirectoryPath ToExecutableDirectoryPath(string value)
+        public IExecutableDirectoryPath ToExecutableDirectoryPath(string value)
         {
             var output = new ExecutableDirectoryPath(value);
             return output;
         }
 
-        public ExecutableFilePath ToExecutableFilePath(string value)
+        public IExecutableFilePath ToExecutableFilePath(string value)
         {
             var output = new ExecutableFilePath(value);
             return output;
         }
 
-        public JsonFilePath ToJsonFilePath(string value)
+        public IJsonFilePath ToJsonFilePath(string value)
         {
             var output = new JsonFilePath(value);
             return output;
         }
 
-        public TextFilePath ToTextFilePath(string value)
+        public ITextFileName ToTextFileName(string value)
+        {
+            var output = new TextFileName(value);
+            return output;
+        }
+
+        public ITextFilePath ToTextFilePath(string value)
         {
             var output = new TextFilePath(value);
             return output;
         }
 
-        public XmlFilePath ToXmlFilePath(string value)
+        public IXmlFileName ToXmlFileName(string value)
+        {
+            var output = new XmlFileName(value);
+            return output;
+        }
+
+        public IXmlFilePath ToXmlFilePath(string value)
         {
             var output = new XmlFilePath(value);
             return output;

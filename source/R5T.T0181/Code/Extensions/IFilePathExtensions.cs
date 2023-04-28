@@ -7,7 +7,7 @@ namespace R5T.T0181.Extensions
 {
     public static class IFilePathExtensions
     {
-        public static XmlFilePath AsXmlFilePath(this IFilePath filePath)
+        public static IXmlFilePath AsXmlFilePath(this IFilePath filePath)
         {
             return Instances.FilePathOperator.AsXmlFilePath(filePath);
         }

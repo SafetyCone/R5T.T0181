@@ -10,7 +10,7 @@ namespace R5T.T0181
     [FunctionalityMarker]
     public partial interface IFilePathOperator : IFunctionalityMarker
     {
-        public XmlFilePath AsXmlFilePath(IFilePath filePath)
+        public IXmlFilePath AsXmlFilePath(IFilePath filePath)
         {
             return filePath.Value.ToXmlFilePath();
         }
