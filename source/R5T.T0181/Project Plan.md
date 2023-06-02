@@ -1,2 +1,2 @@
 # R5T.T0181
-Common file type (EXE, XML, etc.) relative strong-types.
+Common type-specific (EXE, XML, etc.) path related strong-types.

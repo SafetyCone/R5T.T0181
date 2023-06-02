@@ -8,6 +8,13 @@ namespace R5T.T0181
     [FunctionalityMarker]
     public partial interface IStringOperator : IFunctionalityMarker
     {
+        /// <inheritdoc cref="ICssFilePath"/>
+        public ICssFilePath ToCssFilePath(string value)
+        {
+            var output = new CssFilePath(value);
+            return output;
+        }
+
         public IExecutableDirectoryPath ToExecutableDirectoryPath(string value)
         {
             var output = new ExecutableDirectoryPath(value);
@@ -20,9 +27,37 @@ namespace R5T.T0181
             return output;
         }
 
+        /// <inheritdoc cref="IHtmlFilePath"/>
+        public IHtmlFilePath ToHtmlFilePath(string value)
+        {
+            var output = new HtmlFilePath(value);
+            return output;
+        }
+
+        /// <inheritdoc cref="IJsFilePath"/>
+        public IJsFilePath ToJsFilePath(string value)
+        {
+            var output = new JsFilePath(value);
+            return output;
+        }
+
         public IJsonFilePath ToJsonFilePath(string value)
         {
             var output = new JsonFilePath(value);
+            return output;
+        }
+
+        /// <inheritdoc cref="IMarkdownFilePath"/>
+        public IMarkdownFilePath ToMarkdownFilePath(string value)
+        {
+            var output = new MarkdownFilePath(value);
+            return output;
+        }
+
+        /// <inheritdoc cref="IRazorFilePath"/>
+        public IRazorFilePath ToRazorFilePath(string value)
+        {
+            var output = new RazorFilePath(value);
             return output;
         }
 
