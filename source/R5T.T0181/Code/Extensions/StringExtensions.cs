@@ -8,66 +8,78 @@ namespace R5T.T0181.Extensions
         /// <inheritdoc cref="IStringOperator.ToCssFilePath(string)"/>
         public static ICssFilePath ToCssFilePath(this string value)
         {
-            return Instances.StringOperator.ToCssFilePath(value);
+            return Instances.StringOperator_Extensions.ToCssFilePath(value);
         }
 
         public static IExecutableDirectoryPath ToExecutableDirectoryPath(this string value)
         {
-            return Instances.StringOperator.ToExecutableDirectoryPath(value);
+            return Instances.StringOperator_Extensions.ToExecutableDirectoryPath(value);
         }
 
         public static IExecutableFilePath ToExecutableFilePath(this string value)
         {
-            return Instances.StringOperator.ToExecutableFilePath(value);
+            return Instances.StringOperator_Extensions.ToExecutableFilePath(value);
         }
 
         /// <inheritdoc cref="IStringOperator.ToHtmlFilePath(string)"/>
         public static IHtmlFilePath ToHtmlFilePath(this string value)
         {
-            return Instances.StringOperator.ToHtmlFilePath(value);
+            return Instances.StringOperator_Extensions.ToHtmlFilePath(value);
         }
 
         /// <inheritdoc cref="IStringOperator.ToJsFilePath(string)"/>
         public static IJsFilePath ToJsFilePath(this string value)
         {
-            return Instances.StringOperator.ToJsFilePath(value);
+            return Instances.StringOperator_Extensions.ToJsFilePath(value);
+        }
+
+        /// <inheritdoc cref="IStringOperator.ToJsonFileName(string)"/>
+        public static IJsonFileName ToJsonFileName(this string value)
+        {
+            return Instances.StringOperator_Extensions.ToJsonFileName(value);
         }
 
         public static IJsonFilePath ToJsonFilePath(this string value)
         {
-            return Instances.StringOperator.ToJsonFilePath(value);
+            return Instances.StringOperator_Extensions.ToJsonFilePath(value);
+        }
+
+        /// <inheritdoc cref="IStringOperator.ToLogFilePath(string)"/>
+        public static ILogFilePath ToLogFilePath(this string value)
+        {
+            return Instances.StringOperator_Extensions.ToLogFilePath(value);
         }
 
         /// <inheritdoc cref="IStringOperator.ToMarkdownFilePath(string)"/>
         public static IMarkdownFilePath ToMarkdownFilePath(this string value)
         {
-            return Instances.StringOperator.ToMarkdownFilePath(value);
+            return Instances.StringOperator_Extensions.ToMarkdownFilePath(value);
         }
 
         /// <inheritdoc cref="IStringOperator.ToRazorFilePath(string)"/>
         public static IRazorFilePath ToRazorFilePath(this string value)
         {
-            return Instances.StringOperator.ToRazorFilePath(value);
+            return Instances.StringOperator_Extensions.ToRazorFilePath(value);
         }
 
         public static ITextFileName ToTextFileName(this string value)
         {
-            return Instances.StringOperator.ToTextFileName(value);
+            return Instances.StringOperator_Extensions.ToTextFileName(value);
         }
 
         public static ITextFilePath ToTextFilePath(this string value)
         {
-            return Instances.StringOperator.ToTextFilePath(value);
+            return Instances.StringOperator_Extensions.ToTextFilePath(value);
         }
 
         public static IXmlFileName ToXmlFileName(this string value)
         {
-            return Instances.StringOperator.ToXmlFileName(value);
+            return Instances.StringOperator_Extensions.ToXmlFileName(value);
         }
 
         public static IXmlFilePath ToXmlFilePath(this string value)
         {
-            return Instances.StringOperator.ToXmlFilePath(value);
+            return Instances.StringOperator_Extensions.ToXmlFilePath(value);
         }
     }
 }

@@ -3,7 +3,7 @@ using System;
 using R5T.T0132;
 
 
-namespace R5T.T0181
+namespace R5T.T0181.Extensions
 {
     [FunctionalityMarker]
     public partial interface IStringOperator : IFunctionalityMarker
@@ -34,6 +34,13 @@ namespace R5T.T0181
             return output;
         }
 
+        /// <inheritdoc cref="IJsonFileName"/>
+        public IJsonFileName ToJsonFileName(string value)
+        {
+            var output = new JsonFileName(value);
+            return output;
+        }
+
         /// <inheritdoc cref="IJsFilePath"/>
         public IJsFilePath ToJsFilePath(string value)
         {
@@ -44,6 +51,13 @@ namespace R5T.T0181
         public IJsonFilePath ToJsonFilePath(string value)
         {
             var output = new JsonFilePath(value);
+            return output;
+        }
+
+        /// <inheritdoc cref="ILogFilePath"/>
+        public ILogFilePath ToLogFilePath(string value)
+        {
+            var output = new LogFilePath(value);
             return output;
         }
 
