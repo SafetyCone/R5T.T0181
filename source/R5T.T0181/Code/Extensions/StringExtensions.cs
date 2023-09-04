@@ -11,6 +11,18 @@ namespace R5T.T0181.Extensions
             return Instances.StringOperator_Extensions.ToCssFilePath(value);
         }
 
+        /// <inheritdoc cref="IStringOperator.ToDataFilePath(string)"/>
+        public static IDataFilePath ToDataFilePath(this string value)
+        {
+            return Instances.StringOperator_Extensions.ToDataFilePath(value);
+        }
+
+        /// <inheritdoc cref="IStringOperator.ToDllFilePath(string)"/>
+        public static IDllFilePath ToDllFilePath(this string value)
+        {
+            return Instances.StringOperator_Extensions.ToDllFilePath(value);
+        }
+
         public static IExecutableDirectoryPath ToExecutableDirectoryPath(this string value)
         {
             return Instances.StringOperator_Extensions.ToExecutableDirectoryPath(value);

@@ -15,6 +15,20 @@ namespace R5T.T0181.Extensions
             return output;
         }
 
+        /// <inheritdoc cref="IDataFilePath"/>
+        public IDataFilePath ToDataFilePath(string value)
+        {
+            var output = new DataFilePath(value);
+            return output;
+        }
+
+        /// <inheritdoc cref="IDllFilePath"/>
+        public IDllFilePath ToDllFilePath(string value)
+        {
+            var output = new DllFilePath(value);
+            return output;
+        }
+
         public IExecutableDirectoryPath ToExecutableDirectoryPath(string value)
         {
             var output = new ExecutableDirectoryPath(value);
